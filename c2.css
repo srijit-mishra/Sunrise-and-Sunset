@@ -1,0 +1,70 @@
+body {
+    margin: 0 0 0 0;
+    background-color: #2c3e50;
+    animation-name: sky-col;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+.grass {
+    background: green;
+    height: 600px;
+    width: 100%;
+    position: absolute;
+}
+
+.sun {
+    background: #f1c40f;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation-name: sun-arc;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes sky-col {
+    0% {
+        background-color: black;
+    }
+    10%{
+        background-color: pink;
+    }
+    30%{
+        background-color: blue;
+    }
+    70%{
+        background-color: blue;
+    }
+    90%{
+        background-color: pink;
+    }
+    100%{
+        background-color: black;
+    }
+}
+
+@keyframes sun-arc {
+    0%{
+        transform: translate(-200px,200px);
+        background-color: orange;
+    }
+    25%{
+        transform: translate(330px,0px);
+        background-color: yellow;
+    }
+    50%{
+        transform: translate(860px,-50px);
+    }
+    75%{
+        transform: translate(1390px,0px);
+        background-color: yellow;
+    }
+    100%{
+        transform: translate(1920px,200px);
+        background-color: red;
+    }
+}
